@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Turismo Aventura</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Turismo Aventura</div>
+    <ul class="nav-links">
+      <li><a href="#destinos">Destinos</a></li>
+      <li><a href="#testimonios">Testimonios</a></li>
+      <li><a href="#calendario">Calendario</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <div class="menu-toggle">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- Carrusel -->
+  <div class="carousel">
+    <div class="carousel-images">
+      <div class="carousel-item">
+        <div class="parallax">
+          <img src="https://res.cloudinary.com/worldpackers/image/upload/c_limit,f_auto,q_auto,w_1140/biwcvzwibli4fbxzodew" alt="Portada 1" />
+        </div>
+        <div class="caption">
+          <h2>Explora las Montañas</h2>
+          <button>Ver más</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="parallax">
+          <img src="https://www.peru.travel/Contenido/General/Imagen/es/112/1.1/lago-lindo.jpg" alt="Portada 2" />
+        </div>
+        <div class="caption">
+          <h2>Aventuras en la Selva</h2>
+          <button>Ver más</button>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-buttons">
+      <button id="prevBtn">&#10094;</button>
+      <button id="nextBtn">&#10095;</button>
+    </div>
+  </div>
+
+  <!-- Secciones -->
+  <section id="destinos">
+    <h2 class="section-title">Destinos Populares</h2>
+    <div class="destinos">
+      <div class="card">
+        <img src="https://tulumairportt.com/wp-content/uploads/2023/12/tulum-playa-paraiso-beach.webp" alt="Destino 1" />
+        <div class="info">
+          <h3>Playa Paraíso</h3>
+          <p>Arenas blancas y aguas cristalinas.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://p4.wallpaperbetter.com/wallpaper/184/239/731/mountain-mystic-mystic-mountain-nature-mountains-hd-art-wallpaper-preview.jpg" alt="Destino 2" />
+        <div class="info">
+          <h3>Montaña Mística</h3>
+          <p>Escala las alturas con vista increíble.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://cancunissimo.mx/wp-content/uploads/2022/03/Selva-escondida.jpg" alt="Destino 3" />
+        <div class="info">
+          <h3>Selva Escondida</h3>
+          <p>Adéntrate en la naturaleza mágica.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonios">
+    <h2 class="section-title">Testimonios</h2>
+    <div class="testimonios-container">
+      <div class="testimonio">
+        <p>"Una experiencia inolvidable, ¡excelente servicio!"</p>
+        <h4>- Juan Pérez</h4>
+      </div>
+      <div class="testimonio">
+        <p>"Los destinos son simplemente mágicos."</p>
+        <h4>- María Gómez</h4>
+      </div>
+    </div>
+  </section>
+
+  <section id="calendario">
+    <h2 class="section-title">Calendario de Tours</h2>
+    <table class="calendario">
+      <thead>
+        <tr>
+          <th>Fecha</th><th>Tour</th><th>Disponibilidad</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>15/04/2025</td><td>Playa Paraíso</td><td>Disponible</td></tr>
+        <tr><td>22/04/2025</td><td>Montaña Mística</td><td>Completo</td></tr>
+        <tr><td>29/04/2025</td><td>Selva Escondida</td><td>Disponible</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="contacto">
+    <h2 class="section-title">Contáctanos</h2>
+    <form>
+      <input type="text" placeholder="Nombre" required />
+      <input type="email" placeholder="Correo Electrónico" required />
+      <textarea placeholder="Mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <section id="mapa">
+    <h2 class="section-title">Nuestra Ubicación</h2>
+    <div class="mapa-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18..." width="100%" height="350" style="border:0;" allowfullscreen loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <!-- Botones -->
+  <a href="https://wa.me/1234567890" class="whatsapp" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/767px-WhatsApp.svg.png" alt="whatsapp"></a>
+  <a href="#" class="scroll-top" title="Volver arriba">↑</a>
+
+  <footer class="footer">
+    <p>&copy; 2025 Todo Digital</p>
+    <div class="social">
+      <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/2023_Facebook_icon.svg" alt="Facebook" /></a>
+      <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="Instagram" /></a>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="script.js"></script>
+</body>
+</html>
